@@ -10,7 +10,7 @@ const Body = () => {
             
             <Header />
             <Page1/>
-            {/* <Main /> */}
+            <Main />
         </div>
     );
 };
