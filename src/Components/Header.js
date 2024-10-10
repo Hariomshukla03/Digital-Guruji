@@ -1,9 +1,19 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import logo from "../assets/logoBaba.png";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const Header = ({ scrollToConsulting }) => {
   const el = useRef(); 
+  useGSAP(()=>{
+    gsap.from(".same",{
+      y:100,
+      delay:0.5,
+      opacity:0
+    })
+  })
+  
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ['APPKE APNE GURUJI', "EMPOWERING STRESS FREE MUMBAI"],  typeSpeed: 50,
@@ -11,6 +21,7 @@ const Header = ({ scrollToConsulting }) => {
       backDelay: 1000,
       loop: true,
     });
+    
 
     return () => {
       typed.destroy();
@@ -19,7 +30,7 @@ const Header = ({ scrollToConsulting }) => {
 
   return (
     <header className="bg-black text-white backdrop-blur-md font-black p-0 shadow-lg">
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto flex same items-center justify-between">
         <div className="flex items-center">
           <img 
             src={logo}
