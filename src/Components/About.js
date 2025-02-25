@@ -43,7 +43,7 @@ const About = () => {
       </div>
       
       {/* Footer Section */}
-      <footer className="bg-gray-800 text-white mt-8 p-4 rounded-lg text-center">
+      <footer className="bg-orange-300 text-black font-bold mt-8 p-4 rounded-lg text-center">
         <p>&copy; {new Date().getFullYear()} Digital Guruji. All rights reserved.</p>
       </footer>
     </div>

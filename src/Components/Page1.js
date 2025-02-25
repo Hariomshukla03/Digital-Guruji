@@ -21,7 +21,7 @@ const Page1 = () => {
         setFadeIn(true);
       }, 500); 
     }, 5000); 
-    return () => clearInterval(quoteInterval); // Cleanup on unmount
+    return () => clearInterval(quoteInterval); 
   }, []);
 
   return (

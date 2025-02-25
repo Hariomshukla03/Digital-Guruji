@@ -11,8 +11,8 @@ const Main=()=>{
             <Consil/>
             <Facebook/>
             <Chatbot/>
+            <Game/>
             <About/> 
-            {/* <Game/> */}
         </div>
     )
 }
